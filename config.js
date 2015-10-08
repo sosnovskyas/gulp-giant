@@ -12,13 +12,13 @@ module.exports = {
     ],
     dest: dev + 'fonts'
   },
-  devScss: {
-    src: src + '/custom.scss',
-    watch: src + '/**/*.scss',
+  devSass: {
+    src: src + '/custom.{sass,scss}',
+    watch: src + '/**/*.{sass,scss}',
     dest: dev,
     concatFile: 'custom.css',
     runTasks: [
-      'dev-scss'
+      'dev-sass'
     ],
     settings: {
       indentedSyntax: true,
@@ -26,8 +26,8 @@ module.exports = {
     }
   },
   devCompass: {
-    src: src + '/custom.scss',
-    watch: src + '/**/*.scss',
+    src: src + '/custom.{sass,scss}',
+    watch: src + '/**/*.{sass,scss}',
     dest: dev,
     runTasks: [
       'dev-compass'
