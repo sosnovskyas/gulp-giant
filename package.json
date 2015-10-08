@@ -1,6 +1,6 @@
 {
   "name": "gulp-giant",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Gulp configuration for many projects",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,20 @@
   },
   "homepage": "https://github.com/sosnovskyas/gulp-giant#readme",
   "dependencies": {
+    "browser-sync": "^2.9.10",
+    "del": "^2.0.2",
     "gulp": "^3.9.0",
-    "require-dir": "^0.3.0"
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-changed": "^1.3.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp.spritesmith": "^4.1.1",
+    "path": "^0.12.7",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.4"
   }
 }
