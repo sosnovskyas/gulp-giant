@@ -71,7 +71,6 @@ module.exports = {
   },
   devCssVendor: {
     src: [
-      './bower_components/normalize-css/normalize.css'
     ],
     dest: dev,
     concatFile: 'vendor.css',
@@ -82,8 +81,6 @@ module.exports = {
   },
   devJsDirect: {
     src: [
-      'bower_components/html5shiv/dist/html5shiv.js',
-      'bower_components/respond/dest/respond.min.js'
     ],
     dest: dev
   },
