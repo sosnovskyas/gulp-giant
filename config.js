@@ -3,6 +3,35 @@ var dev = './build/dev';
 var src = './src';
 
 module.exports = {
+  developer: {
+    sequencePre: [
+      'empty'
+    ],
+    sequenceClean: [
+      'dev-clean'
+    ],
+    sequenceBuild: [
+      'dev-jade',
+      'dev-js-direct',
+      'dev-js-vendor',
+      'dev-js-custom',
+      'dev-compass',
+      'dev-fonts',
+      'dev-img'
+    ],
+    sequenceServer: [
+      'dev-browsersync'
+    ],
+    sequenceWatch: [
+      'dev-watch-jade',
+      'dev-watch-compass',
+      'dev-watch-js-custom',
+      'dev-watch-img'
+    ],
+    sequencePost: [
+      'empty'
+    ]
+  },
   devClean: {
     dest: dev
   },
