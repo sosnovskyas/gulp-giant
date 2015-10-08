@@ -1,7 +1,6 @@
 //var prod = './build/prod';
 var dev = './build/dev';
 var src = './src';
-var jsFileList = '/**/*.{js,coffee}';
 
 module.exports = {
   devClean: {
@@ -22,8 +21,8 @@ module.exports = {
       'dev-scss'
     ],
     settings: {
-      indentedSyntax: true, // Enable .sass syntax!
-      imagePath: 'img' // Used by the image-url helper
+      indentedSyntax: true,
+      imagePath: 'img'
     }
   },
   devCompass: {
@@ -48,8 +47,8 @@ module.exports = {
     dest: dev,
     concatFile: 'vendor.css',
     settings: {
-      indentedSyntax: true, // Enable .sass syntax!
-      imagePath: 'images' // Used by the image-url helper
+      indentedSyntax: true,
+      imagePath: 'images'
     }
   },
   devJsDirect: {
@@ -60,7 +59,7 @@ module.exports = {
     dest: dev
   },
   devJsCustom: {
-    src: src + jsFileList,
+    src: src + '/**/*.{js,coffee}',
     dest: dev,
     watch: src + '/**/*.{js,coffee}',
     runTasks: [
