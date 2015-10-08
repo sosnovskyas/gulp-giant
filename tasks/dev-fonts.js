@@ -1,8 +1,7 @@
-
 var gulp = require('gulp');
+var config = require('../config').devFonts;
 
 gulp.task('dev-fonts', function() {
-    return gulp.src([
-        'src/fonts/**/*'])
-        .pipe(gulp.dest('build/dev/fonts/'));
+  return gulp.src(config.src)
+    .pipe(gulp.dest(config.dest));
 });
